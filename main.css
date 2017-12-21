@@ -72,3 +72,37 @@ footer {
 footer p:first-child {
     margin-bottom: 10px;
 }
+
+/* TABLET LAYOUT */
+
+@media screen and (min-width: 768px) {
+    .posts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .post {
+       max-height: 280px;
+       overflow: auto;
+       flex: 1 1 45%;
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer p {
+        flex: 1;
+    }
+
+    footer p:first-child {
+        text-align: left;
+    }
+
+    footer p:last-child {
+        text-align: right;
+    }
+ }
